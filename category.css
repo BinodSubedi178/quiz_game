@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.game-mode{
+    height: 100vh;
+    width: 100vw;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgb(19, 171, 221) 0%, rgba(3,98,158,1) 100%);
+}
