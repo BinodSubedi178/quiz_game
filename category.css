@@ -149,7 +149,7 @@ small{
 /* ====================== SMALL DEVICES ===================== */
 @media (max-width:639px){
     .game-mode{
-        height: 215vh;
+        height: 217vh;
     }
     .mode-heading{
         height: 10vh;
