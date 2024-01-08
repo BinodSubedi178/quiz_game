@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    transition: var(--transition);
 }
 
 .game-mode{
@@ -8,4 +9,180 @@
     width: 100vw;
     background: rgb(2,0,36);
     background: linear-gradient(180deg, rgb(19, 171, 221) 0%, rgba(3,98,158,1) 100%);
+}
+.mode-heading{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mode-heading h2{
+    font-size: 2.5rem;
+    color: var(--color-text);
+    text-shadow: 6px 5px 8px #333;
+}
+.mode-selection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    height: 80vh;
+    margin: auto;
+}
+.cards-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    height: 85%;
+    margin: auto;
+    justify-content: space-around;
+    gap: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    outline: 2px solid transparent;
+    width: 255px;
+    height: 500px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.543);
+    box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.2);
+    color: var(--color-text);
+    gap: 14px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.card-image{
+    height: 250px;
+    width: 250px;
+}
+.card img{
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1/1;
+
+    border-radius: 10px;
+}
+.card h4{
+    font-size: 1.2rem;
+}
+small{
+    padding:0 5px;
+    font-size: 0.9rem;
+    color: rgb(221, 212, 212);
+}
+.continue-btn{
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#continue-btn{
+    padding: 15px 60px;
+    border-radius: 9px;
+    outline: none;
+    border: 1px solid transparent;
+    background-color: var(--color-primary);
+    font-size: 1.2rem;
+    color: var(--color-text);
+    box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.092);
+    cursor: pointer;
+}
+#continue-btn:hover{
+    background-color: rgb(17, 98, 211);
+}
+.card.selected {
+    outline: 2px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.675);
+  }
+.swal2-popup .swal2-title {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: rgb(23, 23, 23);
+}
+.swal2-popup {
+    width: 290px;
+    height: 110px;
+    border-radius: 10px;
+    background-color: rgb(66, 175, 238)
+}
+.swal2-popup .swal2-actions button {
+    border: 1px solid transparent;
+    background-color: var(--color-primary);
+    padding: 3.5px 30px;
+}
+.swal2-popup .swal2-actions {
+    margin-top: 5px;
+}
+/* ====================== MEDIUM DEVEICES ===================== */
+@media (max-width:1429px){  
+    .card{
+        height: 400px;
+        width: 270px;
+    }
+    .card-image{
+        height: 180px;
+        width: 100%;
+    }
+    small{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width:768px){
+    .card{
+        height: 330px;
+        width: 230px;
+    }
+    .card-image{
+        height: 150px;
+        width: 100%;
+    }
+    small{
+        font-size: 0.7rem;
+    }
+}
+/* ====================== SMALL DEVICES ===================== */
+@media (max-width:639px){
+    .game-mode{
+        height: 203vh;
+    }
+    .mode-heading{
+        height: 10vh;
+    }
+    .card{
+        height: 380px;
+        width: 264px;
+        gap: 6px;
+    }
+    .card-image{
+        height: 185px;
+        width: 100%;
+    }
+    small{
+        font-size: 0.77rem;
+    }
+    .card h4{
+        font-size: 1.6rem;
+    }
+    .mode-heading h2{
+        font-size: 2rem;
+    }
+    .continue-btn{
+        display: none;
+    }
+}
+@media (max-width:390px){
+    .game-mode{
+        height: 215vh;
+    }
+}
+@media (max-width:375px){
+    .game-mode{
+        height: 275vh;
+    }
 }

@@ -1,15 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.3/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="utilities.css">
     <link rel="stylesheet" href="category.css">
     <title>Choose game mode</title>
 </head>
+
 <body>
     <section class="game-mode">
-        
+        <div class="mode-heading">
+            <h2>Select Game Mode</h2>
+        </div>
+        <div class="mode-selection">
+            <div class="cards-wrapper">
+                <div id="card1" class="card" onclick="selectCard('card1')">
+                    <div class="card-image">
+                        <img src="./assets/card1.jpg" alt="">
+                    </div>
+                    <h4>Classic Mode</h4>
+                    <small>Embark on a thrilling quiz adventure with our classic round! Test your knowledge against the
+                        clock—30 seconds per question, four options to choose from. Challenge yourself and compete for
+                        victory!</small>
+                </div>
+                <div id="card2" class="card" onclick="selectCard('card2')">
+                    <div class="card-image">
+                        <img src="./assets/card2.jpg" alt="">
+                    </div>
+                    <h4>Rapid Fire</h4>
+                    <small>Dive into the excitement of our Rapid Fire round! Quick thinking is key as you face a mere 10
+                        seconds per question, with four options to consider. Feel the adrenaline and race to the
+                        top!</small>
+                </div>
+                <div id="card3" class="card" onclick="selectCard('card3')">
+                    <div class="card-image">
+                        <img src="./assets/card3.jpg" alt="">
+                    </div>
+                    <h4>Survival Mode</h4>
+                    <small>Navigate the quiz carefully as you're allowed only three wrong answers. It's a race against
+                        mistakes—three strikes and it's game over. Can you survive the challenge and emerge
+                        victorious?</small>
+                </div>
+                <div id="card4" class="card" onclick="selectCard('card4')">
+                    <div class="card-image">
+                        <img src="./assets/card4.jpg" alt="">
+                    </div>
+                    <h4>Visual Mode</h4>
+                    <small>Immerse yourself in Visual Mode—a classic quiz experience with a twist. Questions unfold
+                        based on provided images. Sharpen your visual acumen and answer correctly to triumph in this
+                        engaging and visually stimulating quiz journey!</small>
+                </div>
+            </div>
+            <div class="continue-btn">
+                <button id="continue-btn">Continue</button>
+            </div>
+        </div>
     </section>
+    <script src="category.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.3/dist/sweetalert2.min.js"></script>
 </body>
+
 </html>

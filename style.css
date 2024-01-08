@@ -31,13 +31,13 @@
     color: var(--color-text);
 }
 
-/* ====================== SMALL DEVEICES ===================== */
+/* ====================== MEDIUM DEVEICES ===================== */
 @media (max-width:1024px){  
     .landing-page-text h2{
         font-size: 4.3rem;
     }
 }
-/* ====================== MEDIUM DEVICES ===================== */
+/* ====================== SMALL DEVICES ===================== */
 @media (max-width:600px){
     .landing-page-text h2{
         font-size: 3.5rem;
