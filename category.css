@@ -149,7 +149,7 @@ small{
 /* ====================== SMALL DEVICES ===================== */
 @media (max-width:639px){
     .game-mode{
-        height: 207vh;
+        height: 215vh;
     }
     .mode-heading{
         height: 10vh;
@@ -174,11 +174,6 @@ small{
     }
     .continue-btn{
         display: none;
-    }
-}
-@media (max-width:390px){
-    .game-mode{
-        height: 215vh;
     }
 }
 @media (max-width:375px){
