@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,33 @@
     <link rel="stylesheet" href="classic.css">
     <link rel="stylesheet" href="../utilities.css">
 </head>
+
 <body>
-    <h1>Under Development</h1>
-    <p>Exciting Questions coming soon...</p>
+    <section class="play-area">
+       <div class="heading">
+        <h2>Classic Mode</h2>
+       </div>
+        <div class="timer">
+            <span id="timer"></span>
+        </div>
+        <div class="question-area">
+            <div class="question">
+                <span id="question"></span>
+            </div>
+        </div>
+        <div class="option-area">
+            <div class="options">
+                <span class="opt" id="option-1"></span>
+                <span class="opt" id="option-2"></span>
+                <span class="opt" id="option-3"></span>
+                <span class="opt" id="option-4"></span>
+            </div>
+        </div>
+        <div class="score-area">
+            Score : &nbsp; <span id="score"></span>
+        </div>
+    </section>
+    <script src="classic.js"></script>
 </body>
+
 </html>
