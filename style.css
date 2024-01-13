@@ -61,17 +61,20 @@
 }
 @media (max-height:720px){
     .landing-page-text h2{
-        font-size: 2.6rem;
-    }
-    .landing-button{
-        font-size: 0.9rem;
-    }
-}
-@media (max-height:655px){
-    .landing-page-text h2{
         font-size: 2rem;
     }
     .landing-button{
         font-size: 0.8rem;
+    }
+}
+@media (max-height:655px){
+    .landing-page-text h2{
+        font-size: 2.7rem;
+    }
+    .landing-button{
+        padding: 12px 40px;
+    }
+    .login-contents{
+        height: 20vh;
     }
 }
