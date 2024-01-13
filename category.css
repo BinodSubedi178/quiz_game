@@ -81,6 +81,7 @@ small{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 #continue-btn{
     padding: 15px 60px;
@@ -148,29 +149,30 @@ small{
 }
 /* ====================== SMALL DEVICES ===================== */
 @media (max-width:639px){
+    .card {
+        height: 400px;
+        width: 255px;
+        gap: 6px;
+    }
     .game-mode{
-        height: 217vh;
+        height: 225vh;
     }
     .mode-heading{
         height: 10vh;
-    }
-    .card{
-        height: 380px;
-        width: 264px;
-        gap: 6px;
     }
     .card-image{
         height: 185px;
         width: 100%;
     }
-    small{
-        font-size: 0.77rem;
+    small {
+        font-size: 0.80rem;
     }
     .card h4{
         font-size: 1.6rem;
     }
     .mode-heading h2{
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-top: 50px;
     }
     .continue-btn{
         display: none;
@@ -179,5 +181,60 @@ small{
 @media (max-width:375px){
     .game-mode{
         height: 275vh;
+    }
+    .mode-heading h2{
+        font-size: 1.5rem;
+        margin-top: 50px;
+    }
+}
+@media (max-height:650px){
+    .game-mode{
+        height: 290vh;
+    }
+    .mode-heading h2{
+        font-size: 1.4rem;
+        margin-top: 20px;
+    }
+}
+@media (max-height:720px){
+    .game-mode{
+        height: 290vh;
+    }
+}
+@media (max-width:280px){
+    .game-mode{
+        height: 295vh;
+    }
+    .mode-heading h2 {
+        font-size: 1.4rem;
+        margin-top: 50px;
+    }
+    .card{
+        height: 410px;
+        width: 265px;
+    }
+}
+@media (max-height:600px){
+    .mode-selection{
+        height: 165vh;
+    }
+    .game-mode{
+        height: 195vh;
+    }
+}
+@media only screen and (width: 768px) and (height: 726px) {
+    .game-mode{
+        height: 140vh;
+    }
+    .mode-selection{
+        height: 115vh;
+    }
+}
+@media only screen and (width: 1280px) and (height: 800px) {
+    .game-mode{
+        height: 140vh;
+    }
+    .mode-selection{
+        height: 120vh;
     }
 }
