@@ -5,7 +5,7 @@
     outline: none;
     border: 1px solid transparent;
     border-radius: 2rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 10px;
     cursor: pointer;
@@ -27,14 +27,19 @@
     text-align: center;
 }
 .landing-page-text h2{
-    font-size: 4.9rem;
+    font-size: 5.5rem;
     color: var(--color-text);
 }
 
 /* ====================== MEDIUM DEVEICES ===================== */
-@media (max-width:1024px){  
+@media (max-width:1507px){  
     .landing-page-text h2{
-        font-size: 4.3rem;
+        font-size: 4rem;
+    }
+}
+@media (max-width:1056px){  
+    .landing-page-text h2{
+        font-size: 3rem;
     }
 }
 /* ====================== SMALL DEVICES ===================== */
@@ -48,14 +53,25 @@
 }
 @media (max-width:455px){
     .landing-page-text h2{
-        font-size: 3rem;
+        font-size: 2.7rem;
     }
     .landing-button{
         padding: 12px 40px;
     }
 }
-@media (max-width:375px){
+@media (max-height:720px){
     .landing-page-text h2{
-        font-size: 2.5rem;
+        font-size: 2.6rem;
+    }
+    .landing-button{
+        font-size: 0.9rem;
+    }
+}
+@media (max-height:655px){
+    .landing-page-text h2{
+        font-size: 2rem;
+    }
+    .landing-button{
+        font-size: 0.8rem;
     }
 }
